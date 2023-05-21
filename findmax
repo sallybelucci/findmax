@@ -1,0 +1,17 @@
+public class MaxElementFinder {
+    public static int findMaxElement(int[] array) {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {5, 8, 2, 10, 3};
+        int maxElement = findMaxElement(numbers);
+        System.out.println("Maximum element in the array: " + maxElement);
+    }
+}
